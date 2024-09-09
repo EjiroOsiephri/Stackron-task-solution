@@ -21,7 +21,7 @@ $ You should see something like this Server is running on http://localhost:8000 
 $ go to [server](http://localhost:8000) a message will be displayed `Welcome to stackron ecommerce!`
 ```
 
-## Documentation
+## TEST
 
 check out [swagger](http://localhost:8000/docs)
 
