@@ -27,3 +27,9 @@ check out [swagger](http://localhost:8000/api/docs)
 
 do this only after the server is running.
 
+## Documentation
+
+```
+$ in the root directory run the command `npm test` to start jest --watch or npm test:coverage for better log.
+```
+
