@@ -4,7 +4,7 @@
 
 - Written in typescript
 - Supports all Github-supported 
-- Works on Mac, Linux and (maybe) Windows
+- Works on Mac, Linux and Windows
 - Supports other version control systems
 
 ## Installation
