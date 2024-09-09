@@ -10,8 +10,8 @@ const AppDataSource = new DataSource({
 async function resetDatabase() {
   try {
     await AppDataSource.initialize();
-    await AppDataSource.dropDatabase(); // Ensure all tables are dropped
-    await AppDataSource.synchronize(); // Recreate the tables
+    await AppDataSource.dropDatabase();
+    await AppDataSource.synchronize();
     console.log("Database has been reset.");
   } catch (error) {
     console.error("Error resetting the database:", error);
