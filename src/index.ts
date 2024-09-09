@@ -1,8 +1,11 @@
 import express, { Express } from "express";
 import dotenv from "dotenv";
 import bodyparser from "body-parser";
+import swaggerUi from "swagger-ui-express";
 import productRoutes from "./routes/productRoutes";
 import { AppDataSource } from "./models/database";
+import YAML from "yamljs";
+import path from "path";
 
 dotenv.config();
 
@@ -17,6 +20,10 @@ app.get("/", (req, res) => {
 });
 
 app.use("/api", productRoutes);
+
+const swaggerDocument = YAML.load(path.join(__dirname, "/docs/swagger.yaml"));
+
+app.use("/docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 AppDataSource.initialize()
   .then(async () => {
