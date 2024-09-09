@@ -23,7 +23,7 @@ $ go to [server](http://localhost:8000) a message will be displayed `Welcome to 
 
 ## Documentation
 
-check out [swagger](http://localhost:8000/api/docs)
+check out [swagger](http://localhost:8000/docs)
 
 do this only after the server is running.
 
